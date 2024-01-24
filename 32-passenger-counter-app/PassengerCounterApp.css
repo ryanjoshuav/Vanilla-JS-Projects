@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.inc-button,
+.dec-button,
+.reset-button,
+.save-button {
+    margin: 10px;
+    width: 100px;
+}

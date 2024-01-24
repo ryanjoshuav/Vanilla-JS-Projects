@@ -1,0 +1,48 @@
+:root {
+    --font-color: black;
+    --background: #4a90e2;
+    --container-bg: #f2f2f2;
+    --container-bd: black;
+    --textbox-bd: lightgrey;
+    --button-text: white;
+    --add-button: #4caf50;
+    --clear-button: #9f6060;
+}
+
+@mixin mq($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: "Montserrat, sans-serif";
+    color: var(--font-color);
+    width: 100%;
+    min-height: 100%;
+    @include mq(768px) {
+        font-size: 22px;
+    }
+}
+
+body {
+    padding: 20px;
+    background-color: var(--background);
+}
+
+section {
+    background-color: var(--container-bg);
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    border: 1px solid var(--container-bd);
+    border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+body, html {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-div {
+    font-family: comic scan, cursive;
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+#player-text{
+    color: blue;
+}
+
+#computer-text {
+    color: red;
+}
+
+.choice-button {
+    line-height: 30px;
+    width: 150px;
+}
